@@ -1,0 +1,56 @@
+{
+    "name": "˹ᴛʜᴇ sᴄʀᴀᴘᴇʀ ʙᴏᴛ˼",
+    "description": "ɪ ᴀᴍ sᴄʀᴀᴘᴇʀ ʙᴏᴛ. ɪ ᴄᴀɴ sᴄʀᴀᴘ ᴍᴇᴍʙᴇʀ ғʀᴏᴍ ɢʀᴏᴜᴘ ᴛᴏ ᴀɴᴏᴛʜᴇʀ ɢʀᴏᴜᴘ.",
+    "logo": "https://te.legra.ph/file/ab3b5a98bcbc98653c0b5.jpg",
+    "keywords": [
+      "telegram",
+      "telethon",
+      "indian",
+      "pyrogram"
+    ],
+    "website": "https://t.me/TeleBotsUpdates",
+    "repository": "https://github.com/DAXXTEAM/TMA",
+    "addons": [
+           {
+          "options": {
+             "version": "12"
+          },
+          "plan": "heroku-postgresql"
+       }
+    ],
+    "buildpacks": [
+     {
+       "url": "https://github.com/heroku/heroku-buildpack-python"
+     },
+     {
+       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+     }
+   ],
+    "env": {
+        "API_ID": {
+            "description": "ᴇɴᴛᴇʀ ʏᴏᴜʀ ᴀᴘɪ ɪᴅ",
+            "value": "",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "ᴇɴᴛᴇʀ ʏᴏᴜʀ ᴀᴘɪ ʜᴀsʜ ɪᴅ",
+            "value": "",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "ᴇɴᴛᴇʀ ʏᴏᴜʀ ʙᴏᴛ ᴛᴏᴋᴇɴ",
+            "value": "",
+            "required": true
+        },
+        "OWNER_IDS": {
+            "description": "ᴏᴡɴᴇʀ ɪᴅs sᴘᴇᴘᴇʀᴀᴛᴇ ʙʏ sᴘᴀᴄᴇ",
+            "value": "",
+            "required": false
+        },
+        "PREMIUM_IDS": {
+            "description": "ᴘʀᴇᴍɪᴜᴍ ɪᴅs sᴇᴘᴇʀᴀᴛᴇ ʙʏ sᴘᴀᴄᴇ",
+            "value": "",
+            "required": false
+       }
+    }    
+}
