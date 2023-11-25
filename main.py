@@ -33,13 +33,13 @@ if not os.path.exists('data.csv'):
     open("data.csv","w")
 
 
-APP_ID=API_ID
-API_HASH=API_HASH
-BOT_TOKEN=BOT_TOKEN
-OWNERS=OWNER_IDS
-PREMIUMS=PREMIUM_IDS
+APP_ID="24509589"
+API_HASH="717cf21d94c4934bcbe1eaa1ad86ae75"
+BOT_TOKEN="6576720076:AAHqQcXsyuFs9ITDCaD2SBgJX940xGrHRLE"
+OWNERS="6691393517"
+PREMIUMS="6691393517"
 
-app = Client("HirokoScraperBot", api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
+app = Client("AnzooBot", api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
 
 with open("data.csv", encoding='UTF-8') as f:
