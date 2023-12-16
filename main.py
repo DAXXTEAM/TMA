@@ -106,9 +106,6 @@ async def start(client: Client, message: Message):
 async def button(app, update):
    k = update.data
    if "Phone" in k:      
-      if update.message.chat.id  not in PREMIUMS:
-         await app.send_message(update.message.chat.id, f"**ʏᴏᴜ ᴀʀᴇ ɴᴏ ʟᴏɴɢᴇʀ ᴀ ᴘʀᴇᴍɪᴜᴍ ᴜsᴇʀ\nᴘʟᴇᴀsᴇ ʜᴀᴠᴇ ᴀ sᴜʙsᴄʀɪᴘᴛɪᴏɴ 150ʀs\nᴘᴇʀ ᴍᴏɴᴛʜ\nɪғ ʏᴏᴜ ɪɴᴛʀᴇsᴛᴇᴅ ᴛʜᴀɴ ᴄᴏɴᴛᴀᴄᴛ ~ @iam_daxx**")
-         return
       if not os.path.exists(f"Users/{update.message.chat.id}/phone.csv"):
          os.mkdir(f'./Users/{update.message.chat.id}')
          open(f"Users/{update.message.chat.id}/phone.csv","w")
@@ -151,9 +148,6 @@ async def button(app, update):
 # ------------------------ ʀᴇᴍᴏᴠᴇ -------------------- #
 
    elif "Remove" in k:
-      if update.message.chat.id not in PREMIUMS:
-         await app.send_message(update.message.chat.id, f"**ʏᴏᴜ ᴀʀᴇ ɴᴏ ʟᴏɴɢᴇʀ ᴀ ᴘʀᴇᴍɪᴜᴍ ᴜsᴇʀ\nᴘʟᴇᴀsᴇ ʜᴀᴠᴇ ᴀ sᴜʙsᴄʀɪᴘᴛɪᴏɴ 150ʀs\nᴘᴇʀ ᴍᴏɴᴛʜ\nɪғ ʏᴏᴜ ɪɴᴛʀᴇsᴛᴇᴅ ᴛʜᴀɴ ᴄᴏɴᴛᴀᴄᴛ ~ @iam_daxx**")
-         return
       try:
          with open(f"Users/{update.message.chat.id}/phone.csv", 'r')as f:
             str_list = [row[0] for row in csv.reader(f)]
@@ -175,9 +169,6 @@ async def button(app, update):
 # ------------------------ ɴᴜᴍʙᴇʀ ʟɪsᴛ -------------------- #
 
    elif "xdlist" in k:
-      if update.message.chat.id not in PREMIUMS:
-         await app.send_message(update.message.chat.id, f"**ʏᴏᴜ ᴀʀᴇ ɴᴏ ʟᴏɴɢᴇʀ ᴀ ᴘʀᴇᴍɪᴜᴍ ᴜsᴇʀ\nᴘʟᴇᴀsᴇ ʜᴀᴠᴇ ᴀ sᴜʙsᴄʀɪᴘᴛɪᴏɴ 150ʀs\nᴘᴇʀ ᴍᴏɴᴛʜ\nɪғ ʏᴏᴜ ɪɴᴛʀᴇsᴛᴇᴅ ᴛʜᴀɴ ᴄᴏɴᴛᴀᴄᴛ ~ @iam_daxx**")
-         return
       try:
          with open(f"Users/{update.message.chat.id}/phone.csv", 'r')as f:
             str_list = [row[0] for row in csv.reader(f)]
@@ -201,9 +192,6 @@ async def button(app, update):
 # ------------------------ ʟᴏɢɪɴ -------------------- #
    
    elif "Login" in k:
-      if update.message.chat.id not in PREMIUMS:
-         await app.send_message(update.message.chat.id, f"**ʏᴏᴜ ᴀʀᴇ ɴᴏ ʟᴏɴɢᴇʀ ᴀ ᴘʀᴇᴍɪᴜᴍ ᴜsᴇʀ\nᴘʟᴇᴀsᴇ ʜᴀᴠᴇ ᴀ sᴜʙsᴄʀɪᴘᴛɪᴏɴ 150ʀs\nᴘᴇʀ ᴍᴏɴᴛʜ\nɪғ ʏᴏᴜ ɪɴᴛʀᴇsᴛᴇᴅ ᴛʜᴀɴ ᴄᴏɴᴛᴀᴄᴛ ~ @iam_daxx**")
-         return
       with open(f"Users/{update.message.chat.id}/phone.csv", 'r')as f:
        r=[]
        l=[]
@@ -308,9 +296,6 @@ async def button(app, update):
 # ------------------------ ʟᴏɢɪɴ -------------------- #
    
    elif "Adding" in k:
-      if update.message.chat.id not in PREMIUMS:
-         await app.send_message(update.message.chat.id, f"**ʏᴏᴜ ᴀʀᴇ ɴᴏ ʟᴏɴɢᴇʀ ᴀ ᴘʀᴇᴍɪᴜᴍ ᴜsᴇʀ\nᴘʟᴇᴀsᴇ ʜᴀᴠᴇ ᴀ sᴜʙsᴄʀɪᴘᴛɪᴏɴ 150ʀs\nᴘᴇʀ ᴍᴏɴᴛʜ\nɪғ ʏᴏᴜ ɪɴᴛʀᴇsᴛᴇᴅ ᴛʜᴀɴ ᴄᴏɴᴛᴀᴄᴛ ~ @iam_daxx**")
-         return
       number = await update.message.chat.ask(text="**ɴᴏᴡ sᴇɴᴅ ᴛʜᴇ ғʀᴏᴍ ɢʀᴏᴜᴘ ᴜsᴇʀɴᴀᴍᴇ **")
       From = number.text
       number = await update.message.chat.ask(text="**ɴᴏᴡ sᴇɴᴅ ᴛʜᴇ ᴛᴏ ɢʀᴏᴜᴘ ᴜsᴇʀɴᴀᴍᴇ **")
