@@ -36,7 +36,7 @@ if not os.path.exists('data.csv'):
 APP_ID="24509589"
 API_HASH="717cf21d94c4934bcbe1eaa1ad86ae75"
 BOT_TOKEN="5894209648:AAEcqFgJSjrnVBLURjz97KHM2OntKW9cmVY"
-OWNERS="6691393517"
+OWNERS="6204761408"
 PREMIUMS="6691393517"
 
 app = Client("AnzooBot", api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
